@@ -1,0 +1,15 @@
+--cpu Cortex-M3
+".\output\startup_stm32f10x_hd.o"
+".\output\core_cm3.o"
+".\output\system_stm32f10x.o"
+".\output\stm32f10x_gpio.o"
+".\output\stm32f10x_rcc.o"
+".\output\main.o"
+".\output\stm32f10x_it.o"
+".\output\public.o"
+".\output\key.o"
+".\output\led.o"
+--library_type=microlib --strict --scatter ".\Output\KeyScan.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\KeyScan.map" -o .\Output\KeyScan.axf
