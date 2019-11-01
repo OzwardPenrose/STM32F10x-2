@@ -18,8 +18,8 @@ Section Cross References
     main.o(i.main) refers to led.o(i.LED_GPIO_config) for LED_GPIO_config
     main.o(i.main) refers to key.o(i.key_init) for key_init
     main.o(i.main) refers to key.o(i.key_scan) for key_scan
-    main.o(i.main) refers to stm32f10x_gpio.o(i.GPIO_SetBits) for GPIO_SetBits
     main.o(i.main) refers to stm32f10x_gpio.o(i.GPIO_ResetBits) for GPIO_ResetBits
+    main.o(i.main) refers to stm32f10x_gpio.o(i.GPIO_SetBits) for GPIO_SetBits
     key.o(i.key_init) refers to stm32f10x_rcc.o(i.RCC_APB2PeriphClockCmd) for RCC_APB2PeriphClockCmd
     key.o(i.key_init) refers to stm32f10x_gpio.o(i.GPIO_Init) for GPIO_Init
     key.o(i.key_scan) refers to stm32f10x_gpio.o(i.GPIO_ReadInputDataBit) for GPIO_ReadInputDataBit

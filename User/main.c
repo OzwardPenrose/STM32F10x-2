@@ -11,10 +11,10 @@ int main(void){
 	key_init();
 	while(1){
 		if(key_scan(KEY1_GPIO_PORT,KEY1_GPIO_PIN)==KEY_ON){
-			GPIO_SetBits(LED_GPIO_PORT,LED_GPIO_PIN);
+			GPIO_ResetBits(LED_GPIO_PORT,LED_GPIO_PIN);
 		}
 		else if(key_scan(KEY2_GPIO_PORT,KEY2_GPIO_PIN)==KEY_ON){
-			GPIO_ResetBits(LED_GPIO_PORT,LED_GPIO_PIN);
+			GPIO_SetBits(LED_GPIO_PORT,LED_GPIO_PIN);
 		 }
  }
 }
